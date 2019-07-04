@@ -1,6 +1,6 @@
 # Cartographer_ROS & OS1-Ouster
 
-Ce document a pour but d'assister à l'installation de Cartographer_ros et importer les fichiers de configuration nécessaires au bon fonctionnement de cet outil de SLAM avec le Lidar utilisé (Os1-Ouster).
+Ce document a pour but d'assister à l'installation de Cartographer ROS et importer les fichiers de configuration nécessaires au bon fonctionnement de cet outil de SLAM avec le Lidar utilisé (OS1-Ouster).
 
 ## Installation et construction de Cartographer ROS. 
 
