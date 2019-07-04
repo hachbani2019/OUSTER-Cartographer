@@ -37,3 +37,30 @@ catkin_make_isolated --install --use-ninja
 
 ## Importer les fichiers de configuration.
 
+Télechargement des fichiers
+
+```
+cd ~/Downloads
+git clone https://github.com/hachbani2019/OUSTER-Cartographer.git
+```
+Copier les fichiers dans les bons repository
+
+```
+cp /OUSTER-Cartographer/backpack_3d.lua ~/catkin_ws/src/cartographer_ros/cartographer_ros/configuration_files/backpack_3d.lua
+cp /OUSTER-Cartographer/ouster.urdf ~/catkin_ws/src/cartographer_ros/cartographer_ros/urdf
+cp /OUSTER-Cartographer/offline_ouster_3d.launch ~/catkin_ws/src/cartographer_ros/cartographer_ros/launch
+cp /OUSTER-Cartographer/ouster_3d.launch ~/catkin_ws/src/cartographer_ros/cartographer_ros/launch
+```
+
+## Lancer le SLAM.
+
+On compile le projet
+
+```
+catkin_make_isolated --install --use-ninja
+```
+Ensuite, on lance Cartographer en précisant le chemin du fichier BAG
+
+```
+roslaunch cartographer_ros offline_ouster_3d.launch bag_filenames:=chemin/vers/le/fichier/BAG
+```
