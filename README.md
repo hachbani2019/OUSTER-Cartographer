@@ -51,6 +51,7 @@ cp /OUSTER-Cartographer/ouster.urdf ~/catkin_ws/src/cartographer_ros/cartographe
 cp /OUSTER-Cartographer/offline_ouster_3d.launch ~/catkin_ws/src/cartographer_ros/cartographer_ros/launch
 cp /OUSTER-Cartographer/ouster_3d.launch ~/catkin_ws/src/cartographer_ros/cartographer_ros/launch
 ```
+*la version de backpack_3D.lua que j'ai mise ici est la dernière version: la version tunnée. SI pour but comparatif vous voulez la version brute, vous la trouverez dans l'historique du fichier*  
 
 ## Lancer le SLAM.
 
